@@ -1,0 +1,258 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 16px;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+h1 {
+    font-size: 20pt;
+    color: maroon;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+    background-image: url(Mireille/textile.jpg);
+}
+h1 span #app {
+    border: 4px dashed #20bcd5;
+    padding: 10px;
+    background-color: #787575;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.img-circle {
+    border: 3px solid white;
+    border-radius: 50%;   
+}
+.section { 
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-image: url(Mireille/rain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#header {
+    background-image: url(Mireille/drop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#header img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+#header h1 {
+    font-size: 25pt;
+    color: black;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.active:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+iframe, audio {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #3fb6b2;
+    width: 50%;
+    height: 400px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #f36f48;
+}
+form {
+    text-align: center;
+    margin-top: 0;
+}
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #43a09d;
+}
+textarea {
+    height: 100px;
+}
+input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+.face {
+    transform: scale(0.4);
+    margin: 0 auto;
+    display: block;
+    margin-top: -35px;
+    margin-bottom: -25px;
+}
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
+    text-align: center;
+}
+.copyright {
+    font-size: 14pt;
+    text-align: right;
+    color: black;
+    background-image: url("Mireille/drop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#app {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+    color: white;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-top: 40px;
+}
+  
+.hover-effect {
+    opacity: 1;
+    transition: opacity 0.5s
+    ease-in-out;
+}
+    
+.hover-effect:hover {
+    opacity: 0.5;
+    font-size: 30px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+}
+  
+  slide {
+    scroll-snap-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+a {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+a:hover {
+    color: #666;
+}
+
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Media Queries pour la page responsive */
+@media screen and (max-width: 800px) {
+    iframe, audio {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #3fb6b2;
+        width: 50%;
+        height: 250px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    iframe, audio {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #3fb6b2;
+        width: 60%;
+        height: 250px;
+    }
+  }

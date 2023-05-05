@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document Object Model</title>
+
+</head>
+<body id="document">
+    <header class="header">
+        <video id="background-video" autoplay loop muted>
+            <source src="video/Agneau.mp4" type="video/mp4">
+        </video>
+       
+        
+        <!-- Optional: some overlay text to describe the video -->
+        <div class="content">
+            <h1>Heading</h1>
+            <p>Lorem ipsum...</p>
+        </div>
+    </header>
+
+    <script>
+        const newLink = document.createElement('a');
+        newLink.setAttribute('href','https://www.google.com');
+        newLink.setAttribute('target','_blank');
+        newLink.style.color ='blue';
+        newLink.style.backgroundColor ='lightgrey';
+        newLink.style.fontSize ='20px';
+        newLink.textContent ='Click here to go to Google';
+        document.body.appendChild(newLink);
+
+        const list = document.createElement('ul');
+        for(let i = 1; i <= 5; i++){
+        const listItem = document.createElement('li');
+        listItem.textContent = `Accueil ${i}`;
+        listItem.style.backgroundColor ='white';
+        listItem.style.padding ='10px 10px';
+        listItem.style.listStyle ='none';
+        listItem.style.borderRadius ='20px';
+        list.style.display ='flex';
+        listItem.style.fontSize ='20px';
+        list.style.justifyContent ='space-around';
+        list.appendChild(listItem);
+        }
+        document.body.appendChild(list); 
+
+        var Container = document.getElementById("container"); // Récupère le conteneur pour les boîtes
+
+        // Boucle pour créer les boîtes
+        for (var i = 1; i <= 4; i++) {
+            var box = document.createElement("div"); // Crée un nouvel élément pour chaque boîte
+            container.classList.add("box"); // Ajoute la classe CSS "box" à chaque boîte
+
+            box.textContent = "Boîte " + i; // Ajoute un texte à chaque boîte
+
+            Container.appendChild(box); // Ajoute chaque boîte au conteneur de boîtes
+        }
+    </script>
+
+    <section class="container" id="container">
+        <section class="content1">
+            <h2 class="hover-effect">Diapanorama</h2>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="images/crimson.jpg" style="width:100%">
+                    <div class="text">Diplome Javascript</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="images/golden-eagle.jpg" style="width:100%">
+                    <div class="text">Caption 1</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="images/sea.jpg" style="width:100%">
+                    <div class="text">Caption 2</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2 class="hover-effect">Galéries d'images</h2>
+            <div class="wrapper">
+                <div class="slider">
+                    <img src="sfx/boss.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/boss1.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/boss2.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                </div>
+                <div class="slider">
+                    <img src="sfx/claire.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/claire1.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                </div>
+                <div class="slider">
+                    <img src="sfx/colboc.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/colboc1.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/colboc2.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                </div>
+                <div class="slider">
+                    <img src="sfx/kaki.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/kakiboss.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/boss2.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                </div>
+                <div class="slider">
+                    <img src="sfx/claude.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/claude1.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/cure.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                </div>
+                <div class="slider">
+                    <img src="sfx/joseph.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/joseph1.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                    <img src="sfx/yp.jpg" alt="" class="hover-effect" width="100%" height="100%">
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000); 
+        // Change image every 2 seconds
+        }
+    </script>  
+
+    <footer class="footer">
+        <!-- Add font awesome icons -->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
+        <a href="#" class="fa fa-twitter"></a>
+        <i class="fa fa-google" aria-hidden="true"></i>
+    </footer>
+
+    <script src="dom1.js"></script>
+
+</body>
+</html>
