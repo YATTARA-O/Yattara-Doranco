@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color: bisque;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100vh;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+    line-height: 1.5;
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+}
+.card {
+    margin: 0;
+}
+#app a {
+    color: white;
+    font-size: 20px;
+} 
+h3 {
+    background-color: #333;
+    color: white;
+}
+.btn {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px 3px black;
+}
+.sidebar {
+    background-color: bisque;
+    font-size: 20px;
+    
+}
+.sidebar a {
+    text-transform: capitalize;
+}
+.content {
+    background-color: rgb(181, 210, 124);
+    line-height: 1.5;
+    font-size: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.footer {
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    padding: 35px;
+    line-height: 1.5;
+}

@@ -1,0 +1,33 @@
+body {
+ display: flex;
+ justify-content: center;
+ padding: 50px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;  
+    width: 250px;
+}
+.input_container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.input_container, input, select{
+    width: 250px;
+}
+
+.info {
+    border: 2px solid black;
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+}
+.checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+}

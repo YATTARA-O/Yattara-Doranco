@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Blog</title>
+        <title>Singa Ya Famille</title>
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="mireille1.css">
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     
     <body>
@@ -13,7 +15,7 @@
         <div id="header" class="section">
             <img alt="" class="img-circle" src="Mireille/logo.jpg" width= "800"; height= "800";>
             <br>
-            <marquee behavior="scroll" direction="right"><h1>ASSOCIATION SINGA YA FAMILLE!</h1></marquee>
+            <marquee behavior="scroll" direction="right">ASSOCIATION SINGA YA FAMILLE!</marquee>
         </div>
         <!-- header end -->
 
@@ -137,18 +139,24 @@
         <div class="section" id="contacts">
             <h1><span>Follow US</span></h1>
             <div>
-                <a href="#">
-                    <img alt="Facebook" src="https://www.sololearn.com/Uploads/icons/facebook.png"/>
-                </a>
-                <a href="#">
-                    <img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" />
-                </a>
+                <!-- Add font awesome icons -->
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-snapchat-ghost"></a>
+                <a href="#" class="fa fa-skype"></a>
+                <a href="#" class="fa fa-yahoo"></a>
+                <a href="#" class="fa fa-rss"></a>
             </div>
         </div>
         <!-- Contacts section end -->
         
         <div class="copyright">
-            &copy; 2023 SINGA YA FAMILLE. All rights reserved.
+           <p> &copy; 2023 SINGA YA FAMILLE. All rights reserved. </p>         
+      
         </div>
 
         <script>
@@ -173,15 +181,18 @@
     
         // Créer un tableau avec les liens de navigation
         var navElements = [
-            { href: "javas.html", text: "Javas" },
-            { href: "dom.html", text: "Dom" },
-            { href: "dom1.html", text: "Dom1" },
+            { href: "javas.html", text: "Accueil" },
+            { href: "dom.html", text: "Galeries" },
+            { href: "dom1.html", text: "Videos" },
         ];
     
         // Boucler à travers chaque lien de navigation et créer un élément <a> pour chaque lien
         for (var i = 0; i < navElements.length; i++) {
             var navLink = document.createElement("a");
             navLink.href = navElements[i].href;
+            myNav.style.backgroundColor = "steelblue";
+            myNav.style.marginBottom = "10px";
+            myNav.style.fontSize = "25px";
             navLink.innerHTML = navElements[i].text;
             nav.appendChild(navLink);
         }

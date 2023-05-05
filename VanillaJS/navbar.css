@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-color: beige;
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 200vh;
+}
+.navbar {
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: -50%;
+    display: block;
+}
+a { 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    display: inline-block;
+    color: blue;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript</title>
+</head>
+<body>
+    <header class="header">
+        <h1>LE DOM</h1>
+    <p class="p2"><strong>Définition :</strong> Un interface de programmation qui permet à des scripts d'examiner et de modifier le contenu de la page web.</p>
+    </header><br>
+    <nav class="navbar">
+        <a href="#">Accueil</a>
+        <a href="#">A propos</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <img id="train" src="images/train.gif" width="300" height="300">
+    </section>
+    <section class="click-event box">
+        <h4>Quel est la capital de la France ?</h4>
+        <button id="btn_1">Paris</button>
+        <button id="btn_2">Lyon</button> <br><br>
+        <p class="p1">La bonne reponse est Paris</p>
+    </section><br><br>
+    <div class="keypresse" id="key"></div>
+
+    <script>
+        train.onclick = function() {
+          let start = Date.now();
+    
+          let timer = setInterval(function() {
+            let timePassed = Date.now() - start;
+    
+            train.style.left = timePassed / 5 + 'px';
+    
+            if (timePassed > 2000) clearInterval(timer);
+    
+          }, 20);
+        }
+      </script>
+
+
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
