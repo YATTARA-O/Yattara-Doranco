@@ -70,7 +70,7 @@ p {
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 50%;
+    /* max-width: 50%; */
     position: relative;
     margin: auto;
 }
@@ -78,8 +78,8 @@ p {
 /* Hide the images by default */
 .mySlides {
     display: none;
-    max-width: 50%;
-    max-height: 50%;
+    /* max-width: 50%;
+    max-height: 50%; */
 }
 .text {
     color: #f2f2f2;
